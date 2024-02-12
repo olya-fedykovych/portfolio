@@ -1,0 +1,269 @@
+.decarto-container {
+    height: 900px;
+    width: 100%;
+    background-image: var(--bg-img-decarto);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.project-text-container {
+    margin-left: 50%;
+    margin-top: 4rem;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.project-title {
+    font-family: var(--font-heading);
+    font-size: 54px;
+    font-weight: 100;
+    width: 800px;
+    text-align: center;
+}
+
+.project-description {
+    font-family: var(--font-text);
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    width: 650px;
+}
+
+.project-title .text-dark,
+.project-description .text-dark {
+    color: var(--typography-light-secondary);
+    font-weight: 300;
+}
+
+.overlay-dark {
+    height: 900px;
+    width: 50%;
+    position: absolute;
+    top: 1650px;
+    left: 0;
+    background-color: var(--bg-overlay-decarto-dark);
+}
+
+.overlay-light {
+    height: 900px;
+    width: 50%;
+    position: absolute;
+    top: 1650px;
+    left: 50%;
+    background-color: var(--bg-overlay-decarto-light);
+}
+
+.img-wide {
+    height: 450px;
+    width: 400px;
+}
+
+.img-thin {
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.img-thin-animate,
+.img-wide-animate {
+    animation-name: fade-bottom;
+    animation-duration: 2s;
+}
+
+.login-dark-img {
+    position: absolute;
+    top: 14rem;
+    left: 0;
+    z-index: 2;
+}
+
+.login-light-img {
+    position: absolute;
+    top: 14rem;
+    right: 0;
+    z-index: 2;
+}
+
+.feed-dark-img {
+    position: absolute;
+    top: 20rem;
+    left: 130px;
+}
+
+.feed-light-img {
+    position: absolute;
+    top: 20rem;
+    right: 130px;
+}
+
+.btn-container-decarto {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35rem;
+}
+
+.btn-transparent {
+    border: 1px solid var(--typography-dark);
+    color: var(--typography-dark) !important;
+}
+
+.btn-filled {
+    background-color: var(--bg-button-decarto);
+    color: var(--typography-dark);
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.btn-filled:hover {
+    background-color: #6A4B2D;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1029px) {
+    .project-description {
+        font-size: 18px;
+    }
+
+    .img-thin {
+        width: 280px;
+        height: 480px;
+    }
+
+    .img-wide {
+        width: 330px;
+        height: 410px;
+    }
+
+    .feed-dark-img {
+        left: 110px;
+        top: 21rem;
+    }
+
+    .feed-light-img {
+        right: 110px;
+        top: 21rem;
+    }
+
+    .btn-container-decarto {
+        margin-top: 33rem;
+    }
+}
+
+@media (max-width: 879px) {
+    .decarto-container {
+        background-size: 190% 100%;
+        height: 1050px;
+    }
+
+    .overlay-dark,
+    .overlay-light {
+        height: 1050px;
+    }
+
+    .project-title {
+        font-size: 42px;
+    }
+
+    .project-description {
+        font-size: 18px;
+        min-width: 400px;
+    }
+
+    .img-thin,
+    .img-wide {
+        width: 280px;
+        height: 350px;
+    }
+
+    .feed-dark-img,
+    .feed-light-img {
+        top: 552px;
+    }
+
+    .feed-dark-img {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .feed-light-img {
+        right: 0;
+    }
+
+    .btn-container-decarto {
+        margin-top: 46rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .decarto-container,
+    .overlay-dark,
+    .overlay-light {
+        height: 820px;
+    }
+
+    .overlay-dark,
+    .overlay-light {
+        top: 1750px;
+    }
+
+    .project-text-container {
+        margin-top: 3rem;
+    }
+
+    .project-title {
+        font-size: 26px;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-description {
+        font-size: 15px;
+        min-width: 300px;
+    }
+
+    .img-thin,
+    .img-wide {
+        width: 200px;
+        height: 250px;
+    }
+
+    .login-light-img,
+    .login-dark-img {
+        top: 11rem;
+    }
+
+    .feed-dark-img,
+    .feed-light-img{
+        top: 27rem;
+    }
+
+    .btn-container-decarto {
+        margin-top: 33.5rem;
+    }
+}

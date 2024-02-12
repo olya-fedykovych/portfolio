@@ -1,0 +1,181 @@
+.sauna-container {
+    height: 1000px;
+    width: 100%;
+    background-image: var(--bg-img-pattern);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 100% 130%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.overlay-sauna {
+    height: 1000px;
+    width: 100%;
+    background-color: var(--bg-overlay-sauna);
+    position: absolute;
+    top: 3450px;
+    left: 0;
+}
+
+.promo-sauna-img,
+.booking-sauna-img {
+    height: 500px;
+    width: 430px;
+    position: absolute;
+}
+
+.promo-sauna-img {
+    left: 5%;
+    top: 16rem;
+}
+
+.booking-sauna-img {
+    right: 5%;
+    top: 16rem;
+}
+
+.main-sauna-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    top: 13rem;
+    z-index: 3;
+    height: 500px;
+    width: 480px;
+}
+
+.main-sauna-img-animate,
+.promo-sauna-img-animate,
+.booking-sauna-img-animate {
+    animation-name: fade-bottom;
+    animation-duration: 2s;
+}
+
+.btn-container-sauna {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36rem;
+}
+
+.btn-container-sauna .btn-filled {
+    background-color: var(--bg-button-sauna);
+}
+
+.btn-container-sauna .btn-filled:hover {
+    background-color: #35493C;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1029px) {
+    .main-sauna-img,
+    .promo-sauna-img,
+    .booking-sauna-img {
+        height: 430px;
+        width: 330px;
+    }
+
+    .promo-sauna-img {
+        left: 3%;
+    }
+
+    .booking-sauna-img {
+        right: 3%;
+    }
+
+    .btn-container-sauna {
+        margin-top: 31rem;
+    }
+
+    .sauna-container,
+    .overlay-sauna {
+        height: 930px;
+    }
+}
+
+@media (max-width: 879px) {
+    .sauna-container,
+    .overlay-sauna {
+        height: 800px;
+    }
+
+    .overlay-sauna {
+        top: 3400px;
+    }
+
+    .main-sauna-img,
+    .promo-sauna-img,
+    .booking-sauna-img {
+        height: 330px;
+        width: 280px;
+    }
+
+    .main-sauna-img {
+        top: 14rem;
+    }
+
+    .promo-sauna-img {
+        left: 3%;
+        top: 12rem;
+    }
+
+    .booking-sauna-img {
+        right: 3%;
+        top: 16rem;
+    }
+
+    .btn-container-sauna {
+        margin-top: 26rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .sauna-container,
+    .overlay-sauna {
+        height: 680px;
+    }
+
+    .overlay-sauna {
+        top: 3170px;
+    }
+
+    .main-sauna-img,
+    .promo-sauna-img,
+    .booking-sauna-img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .promo-sauna-img {
+        top: 10rem;
+    }
+
+    .main-sauna-img {
+        top: 11rem;
+    }
+
+    .booking-sauna-img {
+        top: 12rem;
+    }
+
+    .btn-container-sauna {
+        margin-top: 19rem;
+    }
+}

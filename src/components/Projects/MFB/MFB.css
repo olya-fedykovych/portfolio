@@ -1,0 +1,169 @@
+.mfb-container {
+    height: 900px;
+    width: 100%;
+    background-image: var(--bg-img-floral);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: 100% 130%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.overlay-mfb {
+    height: 900px;
+    width: 100%;
+    background-color: var(--bg-overlay-mfb);
+    position: absolute;
+    top: 2550px;
+    left: 0;
+}
+
+.main-img,
+.promo-img,
+.bouquets-img {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+}
+
+.main-img-animate,
+.bouquets-img-animate {
+    animation-name: fade-bottom;
+    animation-duration: 2s;
+}
+
+.main-img {
+    left: 10%;
+    top: 16rem;
+}
+
+.promo-img {
+    left: 50%;
+    transform: translateX(-50%) !important;
+    top: 14rem;
+    z-index: 3;
+}
+
+.bouquets-img {
+    right: 10%;
+    top: 16rem;
+}
+
+.btn-container-mfb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 37rem;
+}
+
+.btn-container-mfb .btn-filled {
+    background-color: var(--bg-button-mfb);
+}
+
+.btn-container-mfb .btn-filled:hover {
+    background-color: #B28D97;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 880px) and (max-width: 1029px) {
+    .main-img,
+    .promo-img,
+    .bouquets-img {
+        height: 450px;
+        width: 330px;
+    }
+    
+    .main-img {
+        left: 5%;
+    }
+
+    .bouquets-img {
+        right: 5%;
+    }
+
+    .btn-container-mfb {
+        margin-top: 35rem;
+    }
+}
+
+@media (max-width: 879px) {
+    .mfb-container,
+    .overlay-mfb {
+        height: 700px;
+    }
+    
+    .overlay-mfb {
+        top: 2700px;
+    }
+
+    .main-img,
+    .promo-img,
+    .bouquets-img {
+        height: 330px;
+        width: 280px;
+    }
+
+    .main-img {
+        left: 3%;
+        top: 12rem;
+    }
+
+    .bouquets-img {
+        right: 3%;
+        top: 16rem;
+    }
+
+    .btn-container-mfb {
+        margin-top: 26rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .mfb-container,
+    .overlay-mfb {
+        height: 600px;
+    }
+
+    .overlay-mfb {
+        top: 2570px;
+    }
+
+    .main-img,
+    .promo-img,
+    .bouquets-img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .main-img {
+        top: 11rem;
+    }
+
+    .promo-img {
+        top: 12rem;
+    }
+
+    .bouquets-img {
+        top: 13rem;
+    }
+
+    .btn-container-mfb {
+        margin-top: 20.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,33 @@
+:root {
+    --bg-img-floral: url('/src/assets/Background-floral.jpg');
+    --bg-img-pattern: url('/src/assets/Background-pattern.jpg');
+    --bg-img-decarto: url('/src/assets/Background-decarto.jpg');
+
+    --bg-overlay-main: rgba(20, 19, 17, 0.6);
+    --bg-overlay-stack: rgba(95, 95, 95, 0.5);
+    --bg-overlay-decarto-light: rgba(250, 250, 250, 0.5);
+    --bg-overlay-decarto-dark: rgba(0, 0, 0, 0.2);
+    --bg-overlay-mfb: rgba(72, 72, 72, 0.6);
+    --bg-overlay-sauna: rgba(0, 0, 0, 0.6);
+    --header-overlay: rgba(250, 250, 250, 0.8);
+
+    --bg-header: #C8C5BE;
+    --bg-footer: rgba(200, 197, 190, 0.7);
+    --bg-skills-widget: rgba(241, 240, 236, 0.9);
+    --bg-icons-widget: rgba(241, 240, 236, 0.85);
+
+    --bg-button-decarto: #986A3E;
+    --bg-button-mfb: #D2B0B9;
+    --bg-button-sauna: #1B261F;
+
+    --typography-dark: #FAFAFA;
+    --typography-light-primary: #3E3631;
+    --typography-light-secondary: #2B2420;
+    --typography-hover: #73665E;
+
+    --font-heading: 'Antic Didone', serif;
+    --font-subheading: 'Domine', serif;
+    --font-text: 'Raleway', sans-serif;
+
+    
+}
