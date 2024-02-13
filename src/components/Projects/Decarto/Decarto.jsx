@@ -14,8 +14,10 @@ export const Decarto = () => {
             <h1 className='project-title'>DECARTO SO<span className='text-dark'>CIAL MEDIA</span></h1>
             <p 
             className='project-description'>
-                A MERN stack social media for <span className='text-dark'>artists and creative people which</span> includes functionality, 
-                such as <span className='text-dark'>authentication, authorisation and user</span> interactions(likes, following, <span className='text-dark'>creating posts, and more).</span>
+                A MERN stack social media which enables artists and creative people to share their work and get inspired by others.
+                <span className='description-desktop'> Application is designed to be fully responsive while also offering dark and light mode features to cater to diverse 
+                user preferences.</span> Key functionality consists of authentication, authorisation and a range of user interactions, 
+                including likes, following, creating posts, and beyond.
             </p>
         </div>
         <div className='overlay-dark'>

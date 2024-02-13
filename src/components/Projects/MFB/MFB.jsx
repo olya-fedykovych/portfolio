@@ -14,8 +14,11 @@ export const MFB = () => {
                 <h1 className='project-title'>MFB ECOMMERCE WEBSITE</h1>
                 <p 
                 className='project-description'>
-                    An interactive e-commerce website of the flower store which positively showcases company products
-                    and enhances convenience and accessibility of purchasing process.
+                    A dynamic mobile-friendly online platform for the flower store that effectively highlights the company's products 
+                    and maintains brand consistency. The application incorporates essential e-commerce features, 
+                    enhancing the convenience of purchasing experience.
+
+
                 </p>
             </div>
                 <img src={main} className={isMfbInView ? 'main-img main-img-animate' : 'main-img'} alt="MFB image main"/>

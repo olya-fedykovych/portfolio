@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="separator"></div>
             <p 
             className={isHeroInView ? "description-main description-main-animate" : "description-main"}>
-                A frontend web developer driven by passion for creating distinctive and functional user interfaces.
+                A Front End Developer driven by passion for creating distinctive and functional user interfaces.
                 My primary focus is implementing user-centric web applications which align with company and user requirements.
                 To achieve this aim, I leverage technologies including <span className='text-bold'>JavaScript</span>, <span className='text-bold'>React</span>, <span className='text-bold'>Redux</span>, <span className='text-bold'>CSS/Sass</span> and <span className='text-bold'>Node.js/Express</span>. 
                 Actively seeking career opportunities within a company with shared values and objectives

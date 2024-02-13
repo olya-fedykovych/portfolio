@@ -164,18 +164,18 @@
     }
 
     .promo-sauna-img {
-        top: 10rem;
-    }
-
-    .main-sauna-img {
         top: 11rem;
     }
 
-    .booking-sauna-img {
+    .main-sauna-img {
         top: 12rem;
     }
 
+    .booking-sauna-img {
+        top: 13rem;
+    }
+
     .btn-container-sauna {
-        margin-top: 19rem;
+        margin-top: 20rem;
     }
 }

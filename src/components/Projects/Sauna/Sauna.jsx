@@ -14,8 +14,9 @@ export const Sauna = () => {
                 <h1 className='project-title'>THE BIRCH SAUNA WEBSITE</h1>
                 <p 
                 className='project-description'>
-                    A fully responsive website which allows users to obtain information about The Birch Sauna services
-                    and schedule appointments seamlessly.
+                    A fully-responsive website designed to showcase comprehensive information about services offered by the company. 
+                    The platform incorporates functionality which enables users to schedule appointments with ease, 
+                    thereby enhancing overall customer experience.
                 </p>
             </div>
                 <img src={main} className='main-sauna-img' alt=""/>
