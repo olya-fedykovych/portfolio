@@ -28,14 +28,13 @@
     margin-left: 4rem;
     background: none;
     font-weight: 200;
-    min-width: fit-content;
+    width: fit-content;
 }
 
 .heading-main-animate {
     animation-name: fade-left;
     animation-duration: 2s;
 }
-
 
 .description-main {
     font-size: 18px;

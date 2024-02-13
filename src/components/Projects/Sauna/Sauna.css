@@ -20,6 +20,10 @@
     left: 0;
 }
 
+.overlay-sauna .project-description {
+    background: none;
+}
+
 .promo-sauna-img,
 .booking-sauna-img {
     height: 500px;

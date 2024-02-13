@@ -20,6 +20,10 @@
     left: 0;
 }
 
+.overlay-mfb .project-description {
+    background: none;
+}
+
 .main-img,
 .promo-img,
 .bouquets-img {
@@ -36,19 +40,19 @@
 
 .main-img {
     left: 10%;
-    top: 16rem;
+    top: 15rem;
 }
 
 .promo-img {
     left: 50%;
     transform: translateX(-50%) !important;
-    top: 14rem;
+    top: 13rem;
     z-index: 3;
 }
 
 .bouquets-img {
     right: 10%;
-    top: 16rem;
+    top: 15rem;
 }
 
 .btn-container-mfb {
@@ -56,7 +60,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 37rem;
+    margin-top: 38rem;
 }
 
 .btn-container-mfb .btn-filled {

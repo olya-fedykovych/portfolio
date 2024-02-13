@@ -36,7 +36,9 @@
     font-weight: 200;
     font-size: 18px;
     text-align: center;
-    mix-blend-mode: difference !important;
+    padding: 0 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
     width: 900px;
 }
 
