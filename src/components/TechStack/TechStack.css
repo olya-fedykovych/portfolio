@@ -1,5 +1,5 @@
 .tech-stack {
-    height: 800px;
+    height: 100vh;
     width: 100vw;
     background-image: var(--bg-img-pattern);
     background-size: 100% 140%;
@@ -9,15 +9,14 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    
 }
 
 .overlay {
-    height: 800px;
+    height: 100%;
     width: 100%;
     background-color: var(--bg-overlay-stack);
-    position: absolute;
-    top: 850px;
-    left: 0;
+    padding-top: 2rem;
 }
 
 .stack-container {
@@ -118,7 +117,39 @@
 }
 
 
-@media (min-width: 880px) and (max-width: 1029px) {
+@media (min-width: 1441px) {
+    .stack-container {
+        height: 500px;
+    }
+
+    .stack-title {
+        font-size: 52px;
+        margin-bottom: 2rem;
+    }
+
+    .category-title {
+        font-size: 36px;
+    }
+
+    .skills-container {
+        gap: 15rem;
+    }
+
+    .category-list > li {
+        font-size: 22px;
+    }
+
+    .icon-container {
+        height: 180px;
+    }
+
+    .icon-brand {
+        font-size: 74px;
+    }
+
+    .logo-carousel {
+        gap: 5rem;
+    }
 }
 
 @media (max-width: 879px) {

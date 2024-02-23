@@ -1,5 +1,5 @@
 .mfb-container {
-    height: 900px;
+    height: 110vh;
     width: 100%;
     background-image: var(--bg-img-floral);
     background-repeat: no-repeat;
@@ -9,15 +9,14 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    position: relative;
 }
 
 .overlay-mfb {
-    height: 900px;
+    height: 100%;
     width: 100%;
     background-color: var(--bg-overlay-mfb);
-    position: absolute;
-    top: 2550px;
-    left: 0;
+    padding: 1rem;
 }
 
 .overlay-mfb .project-description {
@@ -79,6 +78,29 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (min-width: 1441px) {
+    .main-img,
+    .promo-img,
+    .bouquets-img {
+        height: 720px;
+        width: 600px;
+    }
+
+    .promo-img {
+        top: 15rem;
+    }
+
+    .main-img,
+    .bouquets-img {
+        top: 18rem;
+    }
+
+    .btn-container-mfb {
+        font-size: 19px;
+        margin-top: 53rem;
     }
 }
 

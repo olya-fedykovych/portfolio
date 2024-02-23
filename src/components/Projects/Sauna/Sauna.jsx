@@ -11,7 +11,7 @@ export const Sauna = () => {
     <div className='sauna-container' ref={saunaRef}>
         <div className='overlay-sauna'>
             <div className='project-text-container'>
-                <h1 className='project-title'>THE BIRCH SAUNA WEBSITE</h1>
+                <h1 className='project-title'>THE BIRCH SAUNA</h1>
                 <p 
                 className='project-description'>
                     A fully-responsive website designed to showcase comprehensive information about services offered by the company. 

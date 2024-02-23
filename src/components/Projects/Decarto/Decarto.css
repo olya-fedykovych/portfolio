@@ -1,5 +1,5 @@
 .decarto-container {
-    height: 900px;
+    height: 110vh;
     width: 100%;
     background-image: var(--bg-img-decarto);
     background-repeat: no-repeat;
@@ -10,6 +10,7 @@
     left: 0;
     object-fit: cover;
     overflow: hidden;
+    position: relative;
 }
 
 .project-text-container {
@@ -49,20 +50,20 @@
 }
 
 .overlay-dark {
-    height: 900px;
+    height: 110vh;
     width: 50%;
     position: absolute;
-    top: 1650px;
+    top: 0;
     left: 0;
     background-color: var(--bg-overlay-decarto-dark);
 }
 
 .overlay-light {
-    height: 900px;
+    height: 110vh;
     width: 50%;
     position: absolute;
-    top: 1650px;
-    left: 50%;
+    top: 0;
+    right: 0;
     background-color: var(--bg-overlay-decarto-light);
 }
 
@@ -146,6 +147,49 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (min-width: 1441px) {
+    .project-title {
+        font-size: 60px;
+    }
+
+    .project-description {
+        font-size: 22px;
+    }
+
+    .img-wide {
+        height: 650px;
+        width: 600px;
+    }
+
+    .img-thin {
+        height: 700px;
+        width: 400px;
+    }
+
+    .login-dark-img,
+    .login-light-img {
+        top: 16rem;
+    }
+
+    .feed-dark-img,
+    .feed-light-img {
+        top: 22rem;
+    }
+
+    .feed-dark-img {
+        left: 200px;
+    }
+
+    .feed-light-img {
+        right: 200px;
+    }
+
+    .btn-container-decarto {
+        margin-top: 47rem;
+        font-size: 19px;
     }
 }
 
