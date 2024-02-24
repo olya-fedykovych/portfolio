@@ -8,7 +8,7 @@ export const Sauna = () => {
     const {ref: saunaRef, inView: isSaunaInView} = useInView();
 
     return (
-    <div className='sauna-container' ref={saunaRef}>
+    <section className='sauna-container' ref={saunaRef}>
         <div className='overlay-sauna'>
             <div className='project-text-container'>
                 <h1 className='project-title'>THE BIRCH SAUNA</h1>
@@ -27,7 +27,7 @@ export const Sauna = () => {
                 <a href="https://github.com/olya-fedykovych/the-birch-sauna-website" className='btn btn-filled' target='_blank'>SOURCE CODE</a>
             </div>
         </div>
-    </div>
+    </section>
     )
 }
 

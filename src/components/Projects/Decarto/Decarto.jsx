@@ -9,7 +9,7 @@ export const Decarto = () => {
     const {ref: decartoRef, inView: isDecartoInView} = useInView();
 
     return (
-    <div className='decarto-container' id='projects' ref={decartoRef}>
+    <section className='decarto-container' id='projects' ref={decartoRef}>
         <div className='project-text-container'>
             <h1 className='project-title'>DECARTO SO<span className='text-dark'>CIAL MEDIA</span></h1>
             <p 
@@ -32,7 +32,7 @@ export const Decarto = () => {
             <a href="/" className='btn btn-transparent' target='_blank'>WEBSITE DEMO</a>
             <a href="https://github.com/olya-fedykovych/decarto-social-media-app" className='btn btn-filled' target='_blank'>SOURCE CODE</a>
         </div>
-    </div>
+    </section>
     )
 }
 

@@ -1,11 +1,12 @@
 .decarto-container {
-    height: 110vh;
+    height: 100vh;
+    min-height: 900px;
     width: 100%;
     background-image: var(--bg-img-decarto);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: right;
-    background-size: 100% 100%;
+    background-size: 100% 156%;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -34,13 +35,14 @@
 
 .project-description {
     font-family: var(--font-text);
-    font-weight: 200;
+    font-weight: 300;
     font-size: 18px;
     text-align: center;
     padding: 0 1rem;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 900px;
+    max-height: 75px;
 }
 
 .project-title .text-dark,
@@ -50,7 +52,7 @@
 }
 
 .overlay-dark {
-    height: 110vh;
+    min-height: 100%;
     width: 50%;
     position: absolute;
     top: 0;
@@ -59,7 +61,7 @@
 }
 
 .overlay-light {
-    height: 110vh;
+    min-height: 100%;
     width: 50%;
     position: absolute;
     top: 0;
@@ -118,7 +120,8 @@
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    margin-top: 35rem;
+    margin-top: 570px;
+    padding-bottom: 4rem;
 }
 
 .btn-transparent {
@@ -151,12 +154,18 @@
 }
 
 @media (min-width: 1441px) {
+    .decarto-container {
+        min-height: 1150px;
+    }
+
     .project-title {
-        font-size: 60px;
+        font-size: 58px;
     }
 
     .project-description {
-        font-size: 22px;
+        font-size: 20px;
+        width: 1200px;
+        max-height: 80px;
     }
 
     .img-wide {
@@ -171,12 +180,12 @@
 
     .login-dark-img,
     .login-light-img {
-        top: 16rem;
+        top: 15rem;
     }
 
     .feed-dark-img,
     .feed-light-img {
-        top: 22rem;
+        top: 21rem;
     }
 
     .feed-dark-img {
@@ -188,7 +197,7 @@
     }
 
     .btn-container-decarto {
-        margin-top: 47rem;
+        margin-top: 770px;
         font-size: 19px;
     }
 }
@@ -220,7 +229,7 @@
     }
 
     .btn-container-decarto {
-        margin-top: 33rem;
+        margin-top: 550px;
     }
 }
 
@@ -242,6 +251,7 @@
     .project-description {
         font-size: 16px;
         max-width: 600px;
+        max-height: 750px;
     }
 
     .img-thin,
@@ -265,20 +275,13 @@
     }
 
     .btn-container-decarto {
-        margin-top: 46rem;
+        margin-top: 720px;
     }
 }
 
 @media (max-width: 599px) {
-    .decarto-container,
-    .overlay-dark,
-    .overlay-light {
-        height: 820px;
-    }
-
-    .overlay-dark,
-    .overlay-light {
-        top: 1750px;
+    .decarto-container {
+        height: 600px;
     }
 
     .project-text-container {
@@ -307,15 +310,15 @@
 
     .login-light-img,
     .login-dark-img {
-        top: 11rem;
+        top: 12rem;
     }
 
     .feed-dark-img,
     .feed-light-img{
-        top: 27rem;
+        top: 28rem;
     }
 
     .btn-container-decarto {
-        margin-top: 33.5rem;
+        margin-top: 550px;
     }
 }

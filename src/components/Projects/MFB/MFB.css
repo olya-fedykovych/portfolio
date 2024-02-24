@@ -1,9 +1,10 @@
 .mfb-container {
-    height: 110vh;
+    height: 100vh;
+    min-height: 870px;
     width: 100%;
     background-image: var(--bg-img-floral);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: left;
     background-size: 100% 130%;
     top: 0;
@@ -16,7 +17,11 @@
     height: 100%;
     width: 100%;
     background-color: var(--bg-overlay-mfb);
-    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding-bottom: 4rem;
 }
 
 .overlay-mfb .project-description {
@@ -59,7 +64,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 38rem;
+    margin-top: 600px;
 }
 
 .btn-container-mfb .btn-filled {
@@ -82,6 +87,10 @@
 }
 
 @media (min-width: 1441px) {
+    .mfb-container {
+        min-height: 1150px;
+    }
+
     .main-img,
     .promo-img,
     .bouquets-img {
@@ -90,17 +99,17 @@
     }
 
     .promo-img {
-        top: 15rem;
+        top: 13rem;
     }
 
     .main-img,
     .bouquets-img {
-        top: 18rem;
+        top: 17rem;
     }
 
     .btn-container-mfb {
         font-size: 19px;
-        margin-top: 53rem;
+        margin-top: 850px;
     }
 }
 
@@ -124,16 +133,16 @@
     .btn-container-mfb {
         margin-top: 35rem;
     }
+
+    .mfb-container {
+        height: 750px;
+    }
 }
 
 @media (max-width: 879px) {
-    .mfb-container,
-    .overlay-mfb {
-        height: 700px;
-    }
-    
-    .overlay-mfb {
-        top: 2700px;
+    .mfb-container {
+        min-height: 700px;
+        height: 70vh;
     }
 
     .main-img,
@@ -154,18 +163,13 @@
     }
 
     .btn-container-mfb {
-        margin-top: 26rem;
+        margin-top: 450px;
     }
 }
 
 @media (max-width: 599px) {
-    .mfb-container,
-    .overlay-mfb {
-        height: 600px;
-    }
-
-    .overlay-mfb {
-        top: 2570px;
+    .mfb-container {
+        height: 750px;
     }
 
     .main-img,
@@ -176,19 +180,19 @@
     }
 
     .main-img {
-        top: 11rem;
-    }
-
-    .promo-img {
-        top: 12rem;
-    }
-
-    .bouquets-img {
         top: 13rem;
     }
 
+    .promo-img {
+        top: 14rem;
+    }
+
+    .bouquets-img {
+        top: 15rem;
+    }
+
     .btn-container-mfb {
-        margin-top: 20.5rem;
+        margin-top: 370px;
         flex-direction: column;
         gap: 0.5rem;
     }

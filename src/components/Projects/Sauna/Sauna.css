@@ -1,9 +1,10 @@
 .sauna-container {
-    height: 120vh;
+    height: 100vh;
+    min-height: 950px;
     width: 100%;
     background-image: var(--bg-img-pattern);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: right;
     object-fit: cover;
     background-size: 100% 130%;
@@ -13,10 +14,13 @@
 }
 
 .overlay-sauna {
-    height: 120vh;
+    min-height: 100%;
     width: 100%;
     background-color: var(--bg-overlay-sauna);
-    padding-top: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 .overlay-sauna .project-description {
@@ -65,7 +69,7 @@
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    margin-top: 36rem;
+    margin-top: 550px;
 }
 
 .btn-container-sauna .btn-filled {
@@ -88,22 +92,34 @@
 }
 
 @media (min-width: 1441px) {
+    .sauna-container {
+        min-height: 1200px;
+    }
+
     .promo-sauna-img,
     .booking-sauna-img {
         height: 700px;
         width: 600px;
-        top: 20rem;
+        top: 16rem;
+    }
+
+    .promo-sauna-img {
+        left: 10%;
+    }
+
+    .booking-sauna-img {
+        right: 10%;
     }
 
     .main-sauna-img {
         height: 700px;
         width: 580px;
-        top: 16rem;
+        top: 12rem;
     }
 
     .btn-container-sauna {
         font-size: 19px;
-        margin-top: 48rem;
+        margin-top: 750px;
     }
 }
 
@@ -129,18 +145,14 @@
 
     .sauna-container,
     .overlay-sauna {
-        height: 930px;
+        min-height: 930px;
     }
 }
 
 @media (max-width: 879px) {
-    .sauna-container,
-    .overlay-sauna {
-        height: 800px;
-    }
-
-    .overlay-sauna {
-        top: 3400px;
+    .sauna-container {
+        height: 80vh;
+        min-height: 800px;
     }
 
     .main-sauna-img,
@@ -170,13 +182,9 @@
 }
 
 @media (max-width: 599px) {
-    .sauna-container,
-    .overlay-sauna {
+    .sauna-container {
         height: 680px;
-    }
-
-    .overlay-sauna {
-        top: 3170px;
+        background-size: 150% 100%;
     }
 
     .main-sauna-img,
@@ -187,18 +195,18 @@
     }
 
     .promo-sauna-img {
-        top: 11rem;
-    }
-
-    .main-sauna-img {
-        top: 12rem;
-    }
-
-    .booking-sauna-img {
         top: 13rem;
     }
 
+    .main-sauna-img {
+        top: 14rem;
+    }
+
+    .booking-sauna-img {
+        top: 15rem;
+    }
+
     .btn-container-sauna {
-        margin-top: 20rem;
+        margin-top: 370px;
     }
 }

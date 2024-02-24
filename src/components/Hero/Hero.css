@@ -2,10 +2,8 @@
     background-image: var(--bg-img-floral);
     background-size: 100% 140%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: left;
-    top: 0;
-    left: 0;
     object-fit: cover;
     height: 100vh;
     width: 100%;
@@ -39,7 +37,7 @@
     margin-top: -250px;
     margin-left: 55%;
     max-width: 28rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.3;
     letter-spacing: 0.6px;
 }
@@ -98,13 +96,13 @@
     }
 
     .separator {
-        height: 500px;
+        height: 520px;
     }
 
     .description-main {
         font-size: 22px;
         max-width: 34rem;
-        margin-top: -290px;
+        margin-top: -320px;
     }
 }
 

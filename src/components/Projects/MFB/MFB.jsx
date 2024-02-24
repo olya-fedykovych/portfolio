@@ -8,7 +8,7 @@ export const MFB = () => {
     const {ref: mfbRef, inView: isMfbInView} = useInView();
 
     return (
-    <div className='mfb-container' ref={mfbRef}>
+    <section className='mfb-container' ref={mfbRef}>
         <div className='overlay-mfb'>
             <div className='project-text-container'>
                 <h1 className='project-title'>MFB ECOMMERCE WEBSITE</h1>
@@ -29,7 +29,7 @@ export const MFB = () => {
                 <a href="https://github.com/olya-fedykovych/MFB-flower-boutique-ecommerce" className='btn btn-transparent' target='_blank'>SOURCE CODE</a>
             </div>
         </div>
-    </div>
+    </section>
     )
 }
 

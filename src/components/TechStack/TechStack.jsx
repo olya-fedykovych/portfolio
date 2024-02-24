@@ -9,8 +9,9 @@ function TechStack() {
     const {ref: iconsRef, inView: isIconsInView} = useInView();
 
     return (
-    <section className="tech-stack" id='about' ref={stackRef}>
-        <div className="overlay" >
+    <section className="tech-stack" id='about'>
+        <div className="overlay" ref={stackRef}>
+            <div className='animation-switch' ref={stackRef}></div>
             <div className={isStackInView ? "stack-container stack-container-animate" : "stack-container"}  ref={iconsRef}>
                 <h3 className="stack-title">Tech Stack & Skills</h3>
                 <div className="skills-container">
