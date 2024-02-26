@@ -23,7 +23,7 @@ export const Sauna = () => {
                 <img src={promo} className={isSaunaInView ? 'promo-sauna-img promo-sauna-img-animate' : 'promo-sauna-img'} alt="" />
                 <img src={booking} className={isSaunaInView ? 'booking-sauna-img booking-sauna-img-animate' : 'booking-sauna-img'} alt="" />
             <div className='btn-container-sauna'>
-                <a href="/" className='btn btn-transparent' target='_blank'>WEBSITE DEMO</a>
+                <a href="https://thebirchsauna.olyafedykovych.com/" className='btn btn-transparent' target='_blank'>WEBSITE DEMO</a>
                 <a href="https://github.com/olya-fedykovych/the-birch-sauna-website" className='btn btn-filled' target='_blank'>SOURCE CODE</a>
             </div>
         </div>

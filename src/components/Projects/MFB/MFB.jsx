@@ -25,7 +25,7 @@ export const MFB = () => {
                 <img src={promo} className='promo-img' alt="MFB image promo" />
                 <img src={bouquets} className={isMfbInView ? 'bouquets-img bouquets-img-animate' : 'bouquets-img'} alt="MFB image bouquets" />
             <div className='btn-container-mfb'>
-                <a href="/" className='btn btn-filled' target='_blank'>WEBSITE DEMO</a>
+                <a href="https://mfb.olyafedykovych.com/" className='btn btn-filled' target='_blank'>WEBSITE DEMO</a>
                 <a href="https://github.com/olya-fedykovych/MFB-flower-boutique-ecommerce" className='btn btn-transparent' target='_blank'>SOURCE CODE</a>
             </div>
         </div>

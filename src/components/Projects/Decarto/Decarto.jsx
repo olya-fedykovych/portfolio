@@ -29,7 +29,7 @@ export const Decarto = () => {
             <img src={feedDark} className={isDecartoInView ? 'img-wide feed-dark-img img-wide-animate' : 'img-wide feed-dark-img'} alt="" />
         </div>
         <div className='btn-container-decarto'>
-            <a href="/" className='btn btn-transparent' target='_blank'>WEBSITE DEMO</a>
+            <a href="https://decarto.olyafedykovych.com/" className='btn btn-transparent' target='_blank'>WEBSITE DEMO</a>
             <a href="https://github.com/olya-fedykovych/decarto-social-media-app" className='btn btn-filled' target='_blank'>SOURCE CODE</a>
         </div>
     </section>
