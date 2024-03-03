@@ -69,7 +69,7 @@
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    margin-top: 550px;
+    margin-top: 560px;
 }
 
 .btn-container-sauna .btn-filled {
@@ -91,7 +91,33 @@
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1921px) {
+    .promo-sauna-img,
+    .booking-sauna-img {
+        height: 800px;
+        width: 700px;
+    }
+
+    .main-sauna-img {
+        height: 800px;
+        width: 680px;
+    }
+
+    .promo-sauna-img {
+        left: 15%;
+    }
+
+    .booking-sauna-img {
+        right: 15%;
+    }
+
+    .btn-container-sauna {
+        margin-top: 850px;
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
     .sauna-container {
         min-height: 1200px;
     }
@@ -100,7 +126,7 @@
     .booking-sauna-img {
         height: 700px;
         width: 600px;
-        top: 16rem;
+        top: 17rem;
     }
 
     .promo-sauna-img {
@@ -114,7 +140,7 @@
     .main-sauna-img {
         height: 700px;
         width: 580px;
-        top: 12rem;
+        top: 13rem;
     }
 
     .btn-container-sauna {

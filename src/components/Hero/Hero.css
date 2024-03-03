@@ -1,6 +1,6 @@
 .hero {
     background-image: var(--bg-img-floral);
-    background-size: 100% 140%;
+    background-size: 100% 180%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: left;
@@ -88,21 +88,40 @@
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1921px) {
     .heading-main {
-        font-size: 72px;
         margin-left: 20rem;
+        font-size: 78px;
+        margin-top: 28rem;
+    }
+
+    .separator {
+        height: 600px;
+    }
+
+    .description-main {
+        font-size: 26px;
+        max-width: 36rem;
+        margin-top: -500px;
+    }
+
+}
+
+@media (min-width: 1441px)and (max-width: 1920px){
+    .heading-main {
+        font-size: 68px;
+        margin-left: 16rem;
         margin-top: 20rem;
     }
 
     .separator {
-        height: 520px;
+        height: 450px;
     }
 
     .description-main {
         font-size: 22px;
         max-width: 34rem;
-        margin-top: -320px;
+        margin-top: -400px;
     }
 }
 

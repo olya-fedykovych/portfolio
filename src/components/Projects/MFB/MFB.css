@@ -26,6 +26,7 @@
 
 .overlay-mfb .project-description {
     background: none;
+    max-height: 75px;
 }
 
 .main-img,
@@ -86,9 +87,41 @@
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1921px) {
+    .main-img,
+    .promo-img,
+    .bouquets-img {
+        height: 820px;
+        width: 700px;
+    }
+
+    .promo-img {
+        top: 16rem;
+    }
+
+    .main-img,
+    .bouquets-img {
+        top: 20rem;
+    }
+
+
+    .btn-container-mfb {
+        font-size: 19px;
+        margin-top: 1000px;
+    }
+
+    .main-img {
+        left: 15%;
+    }
+
+    .bouquets-img {
+        right: 15%;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
     .mfb-container {
-        min-height: 1150px;
+        min-height: 1250px;
     }
 
     .main-img,
@@ -99,17 +132,17 @@
     }
 
     .promo-img {
-        top: 13rem;
+        top: 17rem;
     }
 
     .main-img,
     .bouquets-img {
-        top: 17rem;
+        top: 22rem;
     }
 
     .btn-container-mfb {
         font-size: 19px;
-        margin-top: 850px;
+        margin-top: 950px;
     }
 }
 

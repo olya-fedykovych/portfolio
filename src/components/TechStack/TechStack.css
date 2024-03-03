@@ -1,5 +1,5 @@
 .tech-stack {
-    height: 90vh;
+    height: 100vh;
     min-height: 750px;
     width: 100vw;
     background-image: var(--bg-img-pattern);
@@ -120,11 +120,49 @@
     }
 }
 
+@media (min-width: 1921px) {
+    .icon-container {
+        height: 200px;
+        margin-top: 8rem;
+    }
 
-@media (min-width: 1441px) {
+    .stack-container {
+        height: 700px;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .stack-title {
+        font-size: 54px;
+        margin-bottom: 4rem;
+    }
+
+    .category-title {
+        font-size: 42px;
+    }
+
+    .skills-container {
+        gap: 16rem;
+    }
+
+    .category-list > li {
+        font-size: 26px;
+    }
+
+    .icon-brand {
+        font-size: 78px;
+    }
+
+    .logo-carousel {
+        gap: 8rem;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
     .stack-container {
         height: 500px;
         width: 70%;
+        margin-left: 15%;
     }
 
     .stack-title {
@@ -213,6 +251,7 @@
         align-items: center;
         justify-content: center;
         padding: 0;
+        margin-top: 2rem;
     }
 
     .logo-carousel {
